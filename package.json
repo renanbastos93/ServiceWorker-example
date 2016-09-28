@@ -1,0 +1,22 @@
+{
+  "name": "swexample",
+  "version": "1.0.0",
+  "description": "testando com nodejs se o sw vai funcionar",
+  "main": "service-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renanbastos93/ServiceWorker-example.git"
+  },
+  "author": "Renan Bastos - renanbastos.tec@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renanbastos93/ServiceWorker-example/issues"
+  },
+  "homepage": "https://github.com/renanbastos93/ServiceWorker-example#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

@@ -8,10 +8,17 @@
 	<!-- <script src="service-worker.js"></script> -->
 	<script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(() => console.log('service worker installed'))
-          .catch(err => console.log('Error', err));
+        navigator.serviceWorker.register('sw.js')
+          .then((response) => console.log('service worker installed', response))
+          .catch(err => console.log('Error: ', err));
+      }else{
+      	console.log("Não entrou no service worker!");
       }
+  //     if (navigator.serviceWorker && navigator.serviceWorker.register)
+		// {
+		// 	// Register an empty service worker to trigger web app install banners.
+		// 	navigator.serviceWorker.register("service-worker.js", { scope: "./" });
+		// }
     </script>
 </head>
 <body>
